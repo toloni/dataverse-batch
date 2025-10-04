@@ -1,6 +1,6 @@
 # dataverse-batch
-Python library for batch processing in Microsoft Dataverse.
 
+Python library for batch processing upload data to Microsoft Dataverse.
 
 ## Usage Example
 
@@ -18,7 +18,7 @@ dataverse_batch = DataverseBatch(
 
 # Generate sample data
 sample_data = [
-    {'name': f'Account {i}', 'emailaddress1': f'account{i}@example.com'} 
+    {'name': f'Account {i}', 'emailaddress1': f'account{i}@example.com'}
     for i in range(1000)
 ]
 
@@ -41,3 +41,4 @@ print(f"Errors: {len(result[result['status'] == 'error'])}")
 
 # Save results
 result.to_csv('processing_results.csv', index=False)
+```
