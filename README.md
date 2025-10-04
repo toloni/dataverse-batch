@@ -42,3 +42,11 @@ print(f"Errors: {len(result[result['status'] == 'error'])}")
 # Save results
 result.to_csv('processing_results.csv', index=False)
 ```
+
+## How to Test
+
+```bash
+pip install -r requirements-test.txt
+
+pytest
+```
