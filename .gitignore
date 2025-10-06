@@ -1,0 +1,6 @@
+/src/dataverse_batch.egg-info
+__pycache__
+
+.pytest_cache
+
+.vscode
